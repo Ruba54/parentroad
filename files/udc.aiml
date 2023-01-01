@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+
+<category>
+    <pattern>Hi</pattern>
+    <template>Hi , welcome back 💗
+<ul>
+ <li>I'm here to help you, don't worry. 💕Together, we will diagnose your child's health condition through some questions that will be addressed in the initial diagnosis presentation (I am not a medical specialist, but I will help you reach them if you need easily)..</li>
+    <li>If you ready please write (start)</li>
+        </ul></template>
+</category>
+
+
+
+<category>
+    <pattern>start</pattern>
+    <template>Has your child completed his first year?
+<button>
+    <text>  Yes  </text>
+    <postback>Insert Postback</postback>
+</button>
+<button>
+    <text>  No </text>
+    <postback>Insert Postback</postback>
+</button></template>
+</category>
+<category><pattern>Yes</pattern><template>How child's age?
+<button>
+    <text> 5 year</text>
+    <postback>Insert Postback</postback>
+</button>
+<button>
+    <text> 8 year </text>
+    <postback>Insert Postback</postback>
+</button>
+<button>
+    <text> 10 year </text>
+    <postback>Insert Postback</postback>
+</button></template></category>
+<category><pattern>5 year</pattern><template>Add response for INSERT POSTBACK</template></category>
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
+</aiml>
